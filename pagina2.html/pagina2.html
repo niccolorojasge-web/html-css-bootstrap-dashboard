@@ -58,14 +58,14 @@
                     <form class="row g-3 needs-validation" novalidate>
                         <div class="col-6">
                             <label for="validationCustom01" class="form-label">Nome autore</label>
-                            <input type="text" class="form-control" id="validationCustom01" value="inseriasci il nome dell" required>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
                         <div class="col-6">
                             <label for="validationCustom02" class="form-label">cognome autore</label>
-                            <input type="text" class="form-control" id="validationCustom02" value="inserisci il cognome" required>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
@@ -77,7 +77,7 @@
                                 Please provide a valid city.
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-xl-4">
                             <label for="validationCustom04" class="form-label">Genere</label>
                             <select class="form-select" id="validationCustom04" required>
                                 <option selected disabled value="">Scegli il genere</option>
@@ -87,18 +87,28 @@
                                 Please select a valid state.
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <label for="validationCustom05" class="form-label">Zip</label>
+                        <div class="col-12 col-xl-4">
+                            <label for="validationCustom05" class="form-label">anno di pubblicazione</label>
                             <input type="text" class="form-control" id="validationCustom05" required>
                             <div class="invalid-feedback">
                                 Please provide a valid zip.
                             </div>
                         </div>
+                        <div class="col-12 col-xl-4">
+                            <label for="validationCustom05" class="form-label">ISBN#</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <form action="url">
+                             <textarea name="note" placeholder="inserisci eventuali note sul libro" rows="8" cols="80" id="note"></textarea>
+                        </form>
                         <div class="col-12">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                 <label class="form-check-label" for="invalidCheck">
-                                    Agree to terms and conditions
+                                    Disponibile anche in digitale
                                 </label>
                                 <div class="invalid-feedback">
                                     You must agree before submitting.
@@ -106,7 +116,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
+                            <button class="btn btn-primary" type="submit">Aggiungi libro </button>
                         </div>
                     </form>
                 </div>
